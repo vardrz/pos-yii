@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $model app\models\Barang */
 
 $this->title = 'Create Barang';
-$this->params['breadcrumbs'][] = ['label' => 'Barangs', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Barang', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="barang-create">

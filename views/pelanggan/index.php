@@ -11,7 +11,7 @@ use app\models\Pelanggan;
 /* @var $searchModel app\models\PelangganSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Pelanggans';
+$this->title = 'Pelanggan';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="pelanggan-index">
@@ -23,7 +23,6 @@ $this->params['breadcrumbs'][] = $this->title;
     </p>
 
     <?php Pjax::begin(); ?>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -39,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, Pelanggan $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'pelanggan_id' => $model->pelanggan_id]);
-                 }
+                }
             ],
         ],
     ]); ?>

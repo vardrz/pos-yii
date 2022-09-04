@@ -33,7 +33,7 @@ use yii\grid\GridView;
             <td colspan="5">&nbsp;</td>
         </tr>
         <tr>
-            <td>Kepada Yth</td>
+            <td>Pelanggan</td>
             <td>:</td>
             <td><?= $pelanggan; ?></td>
             <td>&nbsp;</td>

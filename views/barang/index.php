@@ -11,7 +11,7 @@ use yii\widgets\Pjax;
 /* @var $searchModel app\models\BarangSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Barangs';
+$this->title = 'Barang';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="barang-index">
@@ -22,7 +22,8 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Create Barang', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <?php // echo $this->render('_search', ['model' => $searchModel]); 
+    ?>
     <?php Pjax::begin() ?>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -38,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, Barang $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'barang_id' => $model->barang_id]);
-                 }
+                }
             ],
         ],
     ]); ?>
